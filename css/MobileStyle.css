@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+
+/* Hero section start */
+
+#hero header {
+  position: relative;
+  width: 100vw;
+  background-color: #ffffff;
+}
+
+.hamburger {
+  height: 48px;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hamburger a:first-child i {
+  font-size: 24px;
+  margin-right: 36px;
+  transition: transform 0.1s;
+}
+
+.hamburger a:first-child:hover i {
+  transform: scale(1.2);
+}
+
+#navbar {
+  display: none;
+}
+
+/* banner */
+
+.banner {
+  width: 100vw;
+  height: 653.32px;
+  background-image: url("../images/header-illsutration-mobile@2x.png");
+  background-position: center top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  width: 327px;
+  height: 211px;
+  text-align: center;
+}
+
+.title h1 span:not(:last-child) {
+  display: block;
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.title h1:last-child {
+  color: #36b37e;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.info {
+  width: 327px;
+  height: 164px;
+  color: #172b4d;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* social media icon */
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.social ul li {
+  list-style-type: none;
+}
+
+.twitter {
+  width: 21.58px;
+  height: 21.58px;
+  margin: 9.51px;
+}
+
+.linkedin {
+  width: 22px;
+  height: 21.62px;
+  margin: 9.51px;
+}
+
+.medium {
+  width: 22px;
+  height: 17.69px;
+  margin: 9.51px;
+  margin-top: 13.51px;
+}
+
+.github {
+  width: 19.99px;
+  height: 21.62px;
+  margin: 9.51px;
+  margin-top: 10.51px;
+}
+
+.angellist {
+  width: 16.17px;
+  height: 21.62px;
+  margin: 9.51px;
+  margin-top: 10.51px;
+}
+
+.drop-down {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: -20px;
+}
+
+.chevron {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hero section end */
