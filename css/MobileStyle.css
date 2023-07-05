@@ -35,6 +35,7 @@ body {
 .hamburger a:first-child i {
   font-size: 24px;
   margin-right: 36px;
+  color: #28352f;
   transition: transform 0.1s;
 }
 
