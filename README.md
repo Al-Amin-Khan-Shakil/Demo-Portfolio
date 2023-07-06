@@ -54,6 +54,7 @@
 
 - **Mobile First Design**
 - **Linters**
+- **Skill and Project Showcase**
 
 <!-- GETTING STARTED -->
 
@@ -118,6 +119,7 @@ To run the project, execute the following command:
 - **Contact Form**
 - **Desktop Design**
 - **Modals**
+- **Animation Effect**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
