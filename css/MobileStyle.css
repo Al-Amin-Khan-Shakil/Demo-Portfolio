@@ -290,3 +290,151 @@ body {
 }
 
 /* Work section end */
+
+/* About section start */
+
+#aboutme {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutwrapper {
+  width: 375px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("../images/Mask\ Group.png"), url("../images/Group.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 100% 0.4%, 0% 24%;
+}
+
+.aboutbox {
+  margin-top: 64px;
+  width: 351px;
+  height: 338px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 59px;
+}
+
+.about-title {
+  width: 351px;
+  height: 48px;
+  text-align: center;
+}
+
+.about-title h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.descrip {
+  width: 351px;
+  height: 194px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+}
+
+#aboutme .resumebtn a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  background: #36b37f;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+#aboutme .resumebtn a:active {
+  background-color: #008552;
+}
+
+.aboutwrapper .skill-card {
+  width: 327px;
+  height: 316px;
+  background-color: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-bottom: 24px;
+}
+
+.icon-box {
+  width: 327px;
+  height: 128px;
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-box .icon {
+  background-color: #fff;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tagbox {
+  width: 327px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.skill-card .tagbox li {
+  list-style-type: none;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+  margin-bottom: 24px;
+}
+
+.tagbox ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-card .tagbox ul li {
+  list-style-type: none;
+  margin: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #36b37e;
+  background-color: #fff;
+  padding: 12px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* About section start */
