@@ -438,3 +438,153 @@ body {
 }
 
 /* About section end */
+
+/* Contact form start */
+
+#form-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form-section .form-wrapper {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./images/Frame.png");
+  background-repeat: no-repeat;
+  background-position: 100% 90.2%;
+}
+
+.form-wrapper .form-trigger {
+  width: 327px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  margin-top: 30px;
+}
+
+.form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: 327px;
+  margin-top: 58px;
+}
+
+form input {
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  width: 100%;
+  padding: 15px 16px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
+}
+
+form textarea {
+  background: #fff;
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  height: 114px;
+  width: 100%;
+  padding: 12px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #42526e;
+}
+
+form button {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background-color: #36b37f;
+  padding: 12px;
+  border-radius: 4px;
+  border: 0;
+}
+
+.form-wrapper form button:active {
+  background-color: #008552;
+}
+
+.form-wrapper .my-email {
+  height: 38px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+  margin: 31px auto 29px;
+}
+
+.form-wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  list-style-type: none;
+  width: 170px;
+  align-self: center;
+}
+
+#form-secton .form-wrapper ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form-wrapper ul li a img {
+  padding: 0;
+  margin: 0;
+}
+
+.form-wrapper ul .twitter {
+  width: 19.28px;
+  height: 18.58px;
+}
+
+.form-wrapper ul .linkedin {
+  width: 20px;
+  height: 18.62px;
+}
+
+.form-wrapper ul .medium {
+  width: 20px;
+  height: 15.69px;
+}
+
+.form-wrapper ul .github {
+  width: 17.99px;
+  height: 18.62px;
+}
+
+.form-wrapper ul .angellist {
+  width: 14.17px;
+  height: 18.62px;
+}
+
+.form-wrapper .shape {
+  width: 134px;
+  height: 5px;
+  margin: 32.08px 0 8px;
+  background: #0d151e;
+  border-radius: 10px;
+}
+
+/* Contact form end */
