@@ -53,6 +53,8 @@
 - **Mobile First Design**
 - **Linters**
 - **Skill and Project Showcase**
+- **Contact Form**
+
 
 <!-- GETTING STARTED -->
 
@@ -108,6 +110,11 @@ To run the project, execute the following command:
 - Twitter: [Al Amin Khan Shakil](https://https://twitter.com/AlAminKhan85004)
 - LinkedIn: [Al Amin Khan Shakil](https://https://www.linkedin.com/in/al-amin-khan-shakil-5a3b29252/)
 
+👤 **Author2**
+
+- GitHub: [@kwamay](https://github.com/kwamay)
+- Twitter: [@Kwamay3](https://twitter.com/Kwamay3)
+- LinkedIn: [Kwamay Adu](https://linkedin.com/in/кωαмαу-adu-2b396321a)
 
 <!-- FUTURE FEATURES -->
 
