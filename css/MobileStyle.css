@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("animation.css");
 
 * {
   box-sizing: border-box;
@@ -75,12 +76,40 @@ body {
   text-align: center;
 }
 
+.title h1 {
+  position: relative;
+}
+
+.title h1 b {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #60c095;
+  width: 100%;
+  height: 100%;
+  animation: text-box 2s ease forwards;
+}
+
+@keyframes text-box {
+  50% {
+    left: 0;
+    width: 100%;
+  }
+
+  100% {
+    left: 100%;
+    width: 0;
+  }
+}
+
 .title h1 span:not(:last-child) {
   display: block;
   color: #172b4d;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+  animation: text_revel_one 0.2s forwards;
+  animation-delay: 0.1s;
 }
 
 .title h1:last-child {
@@ -222,6 +251,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.03);
 }
 
 .card .card-info {
@@ -384,6 +418,11 @@ body {
   flex-direction: column;
   justify-content: start;
   margin-bottom: 24px;
+  transition: border 0.1s;
+}
+
+.aboutwrapper .skill-card:hover {
+  border: 2px solid #36b37f;
 }
 
 .icon-box {
