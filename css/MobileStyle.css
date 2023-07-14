@@ -289,6 +289,10 @@ body {
   background-color: #008552;
 }
 
+.card-info .btnbar a:hover {
+  box-shadow: 0 8px 16px 0 rgba(54, 179, 127, 0.24);
+}
+
 /* Work section end */
 
 /* About section start */
@@ -364,6 +368,10 @@ body {
 
 #aboutme .resumebtn a:active {
   background-color: #008552;
+}
+
+#aboutme .resumebtn a:hover {
+  box-shadow: 0 8px 16px 0 rgba(54, 179, 127, 0.24);
 }
 
 .aboutwrapper .skill-card {
@@ -455,7 +463,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("./images/Frame.png");
+  background-image: url("../images/Frame.png");
   background-repeat: no-repeat;
   background-position: 100% 90.2%;
 }
@@ -523,6 +531,10 @@ form button {
   background-color: #008552;
 }
 
+.form-wrapper form button:hover {
+  box-shadow: 0 8px 16px 0 rgba(54, 179, 127, 0.24);
+}
+
 .form-wrapper .my-email {
   height: 38px;
   width: 100%;
@@ -588,3 +600,302 @@ form button {
 }
 
 /* Contact Form End */
+
+/* Desktop Version Start */
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: white;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Hero section start */
+
+  #hero {
+    background-image: url("../images/Header-llustration-desktop@2x.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #hero #navbar {
+    display: block;
+    width: 100vw;
+    height: 8vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0000;
+  }
+
+  #hero .hamburger {
+    display: none;
+  }
+
+  #hero #navbar .manu {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding-top: 2vh;
+    left: 0;
+  }
+
+  #hero .manu a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #344563;
+    margin: 0;
+  }
+
+  #hero .banner {
+    width: 100vw;
+    height: auto;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+  }
+
+  #hero .banner .introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 63.8vw;
+  }
+
+  #hero .title {
+    width: 63.8vw;
+    height: auto;
+    font-style: normal;
+    text-align: center;
+    margin-top: 160px;
+  }
+
+  #hero .title h1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #hero .title h1 span:not(:last-child) {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.37px;
+  }
+
+  #hero .title h1:last-child {
+    flex-basis: 100%;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.37px;
+  }
+
+  #hero .info {
+    width: 100%;
+    height: auto;
+    line-height: 32px;
+    margin: 0;
+  }
+
+  #hero .info p {
+    padding: 0 25px;
+  }
+
+  #hero .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #hero .social ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .chevron {
+    margin: 84px auto 400px;
+  }
+
+  /* Hero section end */
+
+  /* Work section start */
+
+  body .showcase-title {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+  }
+
+  body .title-box {
+    text-align: center;
+    width: 100%;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  body #worksection {
+    margin-top: 52px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    column-gap: 24px;
+    justify-content: center;
+    align-items: center;
+    width: 81.38vw;
+    margin-left: 9.31vw;
+    margin-right: 9.31vw;
+  }
+
+  .card {
+    width: 327px;
+    height: 474px;
+    background: #ebf0ee;
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  /* Work section end */
+
+  /* About section start */
+
+  body #aboutme {
+    background-image:
+      url("../images/illustration-about-me-2-desktop@2x.png"),
+      url("../images/Frame@2x.png");
+    background-repeat: no-repeat;
+    background-size: 228px 127px, 269px 244px;
+    background-position: 0% 39%, 100% 15%;
+  }
+
+  body #aboutme .aboutwrapper {
+    width: 81.38vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: none;
+    margin-top: 108px;
+  }
+
+  #aboutme .aboutwrapper .aboutbox {
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+    padding: 0 8.75vw;
+  }
+
+  #aboutme .aboutwrapper .about-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  #aboutme .aboutwrapper .descrip {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    margin-top: 24px;
+  }
+
+  #aboutme .resumebtn a {
+    margin-top: 24px;
+  }
+
+  .aboutwrapper .skill-card {
+    margin-top: 25px;
+  }
+
+  /* About section end */
+
+  /* Contact form start */
+
+  body #form-section {
+    background-image:
+      url("../images/Frame@contact.png"),
+      url("../images/illustration-2-contact-form-desktop@2x.png"),
+      url("../images/Frame@contact-2.png");
+    background-repeat: no-repeat;
+    background-size: 235px 261px, 130px 105px, 200px 490px;
+    background-position: 0% 95%, 22% 85%, 100% 95%;
+  }
+
+  body #form-section .form-wrapper {
+    width: 81.38vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: none;
+    margin-top: 95px;
+  }
+
+  #form-section .form-wrapper .form-trigger {
+    width: 32.14vw;
+    font-size: 30px;
+    margin: 0;
+  }
+
+  body #form-section .form-wrapper form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    width: 47.5vw;
+    margin: 0;
+  }
+
+  #form-section .form-wrapper .my-email {
+    height: 38px;
+    width: 100%;
+    color: #42526e00;
+    margin: 100px auto;
+  }
+
+  #form-section .form-wrapper ul {
+    width: 100%;
+    justify-content: center;
+    gap: 21px;
+    padding: 60px 20px 20px 20px;
+  }
+
+  #form-section .form-wrapper .shape {
+    display: none;
+  }
+
+  #form-section .horizontal {
+    height: 1px;
+    background: #dfe1e6;
+    width: 100vw;
+    margin-top: -63.28px;
+  }
+}
