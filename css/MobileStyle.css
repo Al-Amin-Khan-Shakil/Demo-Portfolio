@@ -108,6 +108,8 @@ body {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+  animation: text_revel_one 0.2s forwards;
+  animation-delay: 0.1s;
 }
 
 .title h1:last-child {
@@ -249,6 +251,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.03);
 }
 
 .card .card-info {
@@ -411,6 +418,11 @@ body {
   flex-direction: column;
   justify-content: start;
   margin-bottom: 24px;
+  transition: border 0.1s;
+}
+
+.aboutwrapper .skill-card:hover {
+  border: 2px solid #36b37f;
 }
 
 .icon-box {
