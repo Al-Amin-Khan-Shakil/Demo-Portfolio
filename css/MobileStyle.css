@@ -85,9 +85,9 @@ body {
   top: 0;
   left: 0;
   background-color: #60c095;
-  width: 100%;
+  width: 0;
   height: 100%;
-  animation: text-box 2s ease forwards;
+  animation: text-box 3s ease forwards;
 }
 
 @keyframes text-box {
@@ -104,19 +104,33 @@ body {
 
 .title h1 span:not(:last-child) {
   display: block;
-  color: #172b4d;
+  color: #172b4d00;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  animation: text_revel_one 0.2s forwards;
-  animation-delay: 0.1s;
+  animation: text-revel-one 0.1s forwards;
+  animation-delay: 1.4s;
+}
+
+@keyframes text-revel-one {
+  100% {
+    color: #172b4d;
+  }
 }
 
 .title h1:last-child {
-  color: #36b37e;
+  color: #36b37e00;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+  animation: text-revel-two 0.1s forwards;
+  animation-delay: 1.4s;
+}
+
+@keyframes text-revel-two {
+  100% {
+    color: #36b37e;
+  }
 }
 
 .info {
