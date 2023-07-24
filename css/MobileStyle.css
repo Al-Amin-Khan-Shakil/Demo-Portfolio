@@ -58,7 +58,7 @@ body {
   transition: 0.3s;
 }
 
-.close-menu {
+#close-menu {
   color: #93a79d;
   text-decoration: none;
   font-size: 40px;
