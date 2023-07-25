@@ -723,14 +723,20 @@ form button {
     top: 0;
     left: 0;
     background: #0000;
+    transition: 0s;
   }
 
   #hero .hamburger {
     display: none;
   }
 
+  #close-menu {
+    display: none;
+  }
+
   #hero #navbar .manu {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 32px;
     list-style-type: none;
