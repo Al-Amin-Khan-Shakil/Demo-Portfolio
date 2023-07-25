@@ -42,3 +42,78 @@ function handleScreenChange(event) {
 handleScreenChange(mobileQuery);
 
 mobileQuery.addEventListener('change', handleScreenChange);
+
+const projects = [
+  {
+    cardName: 'Multi-Post Stories Gain+Glory',
+    technologies: `
+    <li>Ruby on Rails</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>HTML</li>`,
+    cardSource: `<p class="btn"><a href="#" id="popupbtn">See project</a></p>`
+  },
+  {
+    cardName: 'Multi-Post Stories Gain+Glory',
+    technologies: `
+    <li>Ruby on Rails</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>HTML</li>`,
+    cardSource: `<p class="btn"><a href="#" id="popupbtn">See project</a></p>`
+  },
+  {
+    cardName: 'Multi-Post Stories Gain+Glory',
+    technologies: `
+    <li>Ruby on Rails</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>HTML</li>`,
+    cardSource: `<p class="btn"><a href="#" id="popupbtn">See project</a></p>`
+  },
+  {
+    cardName: 'Multi-Post Stories Gain+Glory',
+    technologies: `
+    <li>Ruby on Rails</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>HTML</li>`,
+    cardSource: `<p class="btn"><a href="#" id="popupbtn">See project</a></p>`
+  },
+  {
+    cardName: 'Multi-Post Stories Gain+Glory',
+    technologies: `
+    <li>Ruby on Rails</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>HTML</li>`,
+    cardSource: `<p class="btn"><a href="#" id="popupbtn">See project</a></p>`
+  },
+  {
+    cardName: 'Multi-Post Stories Gain+Glory',
+    technologies: `
+    <li>Ruby on Rails</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>HTML</li>`,
+    cardSource: `<p class="btn"><a href="#" id="popupbtn">See project</a></p>`
+  }
+];
+
+const workSection = document.getElementById('worksection');
+
+for (let i = 0; i < projects.length; i++) {
+  let fetch = workSection.innerHTML;
+  workSection.innerHTML = `
+  <div class="card item1">
+    <div class="card-info">
+      <h3>${projects[i].cardName}</h3>
+      <ul>
+        ${projects[i].technologies}
+      </ul>
+      <div class="btnbar">
+        ${projects[i].cardSource}
+      </div>
+    </div>
+  </div> ${fetch}`;
+}
