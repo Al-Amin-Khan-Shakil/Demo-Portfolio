@@ -55,6 +55,7 @@
 - **Linters**
 - **Skill and Project Showcase**
 - **Contact Form**
+- **Dynamic Mobile Menu**
 
 <!-- LIVE DEMO -->
 
@@ -124,6 +125,11 @@ To run the project, execute the following command:
 - Twitter: [@Kwamay3](https://twitter.com/Kwamay3)
 - LinkedIn: [Kwamay Adu](https://linkedin.com/in/кωαмαу-adu-2b396321a)
 
+👤 **Author3**
+
+- GitHub: [@Abdul Salam](https://github.com/AbdulSalamAbro)
+- Twitter: [@Abdul Salam](https://twitter.com/Abdul_SalamAbro)
+- LinkedIn: [@Abdul Salam](https://www.linkedin.com/in/abdul-salam-abro/)
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
@@ -133,6 +139,7 @@ To run the project, execute the following command:
 - **Desktop Design**
 - **Modals**
 - **Animation Effect**
+- **Popup Modal**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

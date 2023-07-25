@@ -45,7 +45,44 @@ body {
 }
 
 #navbar {
-  display: none;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  border-radius: 0 0 25px 25px;
+  transition: 0.3s;
+}
+
+#close-menu {
+  color: #93a79d;
+  text-decoration: none;
+  font-size: 40px;
+  text-align: center;
+  margin-left: 85vw;
+}
+
+.manu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  gap: 40px;
+  list-style: none;
+}
+
+.manu a {
+  text-decoration: none;
+  color: #3a4a42;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+  width: 251px;
+  margin-left: 28px;
 }
 
 /* banner */
@@ -686,14 +723,20 @@ form button {
     top: 0;
     left: 0;
     background: #0000;
+    transition: 0s;
   }
 
   #hero .hamburger {
     display: none;
   }
 
+  #close-menu {
+    display: none;
+  }
+
   #hero #navbar .manu {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 32px;
     list-style-type: none;
