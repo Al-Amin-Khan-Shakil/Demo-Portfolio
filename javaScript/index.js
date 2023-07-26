@@ -51,7 +51,7 @@ const projects = [
     <li>CSS</li>
     <li>JavaScript</li>
     <li>HTML</li>`,
-    cardSource: `<p class="btn"><a href="#" id="popupbtn">See project</a></p>`
+    cardSource: '<p class="btn"><a href="#" id="popupbtn1">See project</a></p>'
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -60,7 +60,7 @@ const projects = [
     <li>CSS</li>
     <li>JavaScript</li>
     <li>HTML</li>`,
-    cardSource: `<p class="btn"><a href="#" id="popupbtn">See project</a></p>`
+    cardSource: '<p class="btn"><a href="#" id="popupbtn2">See project</a></p>'
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -69,7 +69,7 @@ const projects = [
     <li>CSS</li>
     <li>JavaScript</li>
     <li>HTML</li>`,
-    cardSource: `<p class="btn"><a href="#" id="popupbtn">See project</a></p>`
+    cardSource: '<p class="btn"><a href="#" id="popupbtn3">See project</a></p>'
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -78,7 +78,7 @@ const projects = [
     <li>CSS</li>
     <li>JavaScript</li>
     <li>HTML</li>`,
-    cardSource: `<p class="btn"><a href="#" id="popupbtn">See project</a></p>`
+    cardSource: '<p class="btn"><a href="#" id="popupbtn4">See project</a></p>'
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -87,7 +87,7 @@ const projects = [
     <li>CSS</li>
     <li>JavaScript</li>
     <li>HTML</li>`,
-    cardSource: `<p class="btn"><a href="#" id="popupbtn">See project</a></p>`
+    cardSource: '<p class="btn"><a href="#" id="popupbtn5">See project</a></p>'
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -96,7 +96,7 @@ const projects = [
     <li>CSS</li>
     <li>JavaScript</li>
     <li>HTML</li>`,
-    cardSource: `<p class="btn"><a href="#" id="popupbtn">See project</a></p>`
+    cardSource: '<p class="btn"><a href="#" id="popupbtn6">See project</a></p>'
   }
 ];
 
@@ -117,3 +117,44 @@ for (let i = 0; i < projects.length; i++) {
     </div>
   </div> ${fetch}`;
 };
+
+const popupOn1 = document.getElementById('popupbtn1');
+const popupOn2 = document.getElementById('popupbtn2');
+const popupOn3 = document.getElementById('popupbtn3');
+const popupOn4 = document.getElementById('popupbtn4');
+const popupOn5 = document.getElementById('popupbtn5');
+const popupOn6 = document.getElementById('popupbtn6');
+const popupOff = document.getElementById('popup-offbtn');
+const modalOff = document.getElementById('popup');
+const popUp = document.getElementById('popup-wrapper');
+
+function openModal() {
+  popUp.style.display = 'block';
+}
+
+function closeModal() {
+  popUp.style.display = 'none';
+}
+
+function showWebsite(event) {
+  if (event.target === modalOff) {
+    popUp.style.display = 'none';
+  }
+}
+
+document.addEventListener('click', showWebsite);
+popupOff.onclick = closeModal;
+modalOff.onclick = showWebsite;
+document.onclick = function callOpenModal(event) {
+  switch (event.target) {
+    case popupOn1:
+    case popupOn2:
+    case popupOn3:
+    case popupOn4:
+    case popupOn5:
+    case popupOn6:
+      openModal();
+      break;
+    default:
+  }
+}
