@@ -17,7 +17,7 @@ function applyMobileBehavior() {
   openMenu.onclick = revealMenu;
   closeMenu.onclick = removeMenu;
 
-  document.addEventListener('click', function moveMenu(event) {
+  document.addEventListener('click', (event) => {
     switch (event.target) {
       case menuLink1:
       case menuLink2:
@@ -145,7 +145,7 @@ function showWebsite(event) {
 document.addEventListener('click', showWebsite);
 popupOff.onclick = closeModal;
 modalOff.onclick = showWebsite;
-document.addEventListener('click', function callOpenModal(event) {
+document.addEventListener('click', (event) => {
   switch (event.target) {
     case popupOn1:
     case popupOn2:
