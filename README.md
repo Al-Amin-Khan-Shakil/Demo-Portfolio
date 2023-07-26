@@ -56,6 +56,9 @@
 - **Skill and Project Showcase**
 - **Contact Form**
 - **Dynamic Mobile Menu**
+- **Dynamic Cards Section**
+- **popup**
+
 
 <!-- LIVE DEMO -->
 
