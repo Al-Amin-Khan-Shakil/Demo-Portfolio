@@ -56,6 +56,9 @@
 - **Skill and Project Showcase**
 - **Contact Form**
 - **Dynamic Mobile Menu**
+- **Dynamic Cards Section**
+- **popup**
+
 
 <!-- LIVE DEMO -->
 
@@ -139,7 +142,6 @@ To run the project, execute the following command:
 - **Desktop Design**
 - **Modals**
 - **Animation Effect**
-- **Popup Modal**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
