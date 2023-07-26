@@ -17,7 +17,7 @@ function applyMobileBehavior() {
   openMenu.onclick = revealMenu;
   closeMenu.onclick = removeMenu;
 
-  document.onclick = function moveMenu(event) {
+  document.addEventListener('click', function moveMenu(event) {
     switch (event.target) {
       case menuLink1:
       case menuLink2:
@@ -26,7 +26,7 @@ function applyMobileBehavior() {
         break;
       default:
     }
-  };
+  });
 }
 
 const mobileQuery = window.matchMedia('(max-width: 768px)');
@@ -145,7 +145,7 @@ function showWebsite(event) {
 document.addEventListener('click', showWebsite);
 popupOff.onclick = closeModal;
 modalOff.onclick = showWebsite;
-document.onclick = function callOpenModal(event) {
+document.addEventListener('click', function callOpenModal(event) {
   switch (event.target) {
     case popupOn1:
     case popupOn2:
@@ -157,4 +157,4 @@ document.onclick = function callOpenModal(event) {
       break;
     default:
   }
-};
+});
