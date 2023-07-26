@@ -15,6 +15,7 @@ body {
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 /* Hero section start */
@@ -691,6 +692,149 @@ form button {
 
 /* Contact Form End */
 
+/* PopUp start */
+
+#popup-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  z-index: 3;
+  display: none;
+}
+
+#popup {
+  background-color: #0005;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+#modal {
+  max-width: 343px;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 36px 0;
+  border-radius: 16px;
+  position: relative;
+  animation: modalanimate 1s;
+}
+
+.topsection {
+  padding: 16px;
+  width: 100%;
+  position: relative;
+}
+
+.bgPhoto {
+  background: url("../images/Snapshoot\ Portfolio.png") no-repeat;
+  background-size: cover;
+  height: 220px;
+  width: 100%;
+}
+
+.offBTN {
+  position: absolute;
+  right: 23px;
+  top: 22px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  padding: 0 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.offBTN:hover {
+  background-color: #0004;
+}
+
+.bottomsection {
+  padding: 0 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.bottomsection .components {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.bottomsection h3 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.compo-links .desklink {
+  display: none;
+}
+
+#modal .bottomsection .components .compo-links a {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+  text-decoration: none;
+  background: #ebf0ee;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin-right: 4px;
+}
+
+.pragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.modalbtn {
+  margin: 12px 0 32px 0;
+}
+
+#popup #modal .bottomsection .modalbtn a {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background: #36b37f;
+  border-radius: 4px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+@keyframes modalanimate {
+  from {
+    top: - 600px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* PopUp end */
+
 /* Desktop Version Start */
 
 @media screen and (min-width: 768px) {
@@ -994,4 +1138,81 @@ form button {
     width: 100vw;
     margin-top: -63.28px;
   }
+
+  /* PopUp start */
+
+  #modal {
+    max-width: 920px;
+    margin: 0;
+    border-radius: 16px;
+    position: relative;
+  }
+
+  .topsection {
+    padding: 16px;
+    width: 100%;
+    position: static;
+  }
+
+  .bgPhoto {
+    background: url("../images/desktop-snapshoot.png") no-repeat;
+    height: 616px;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .offBTN {
+    color: #0008;
+    background: #0003;
+  }
+
+  .offBTN:hover {
+    background-color: #0005;
+  }
+
+  .bottomsection {
+    padding: 0 16px;
+    display: grid;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .bottomsection .components {
+    grid-area: 1/1/2/6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .compo-links {
+    grid-area: 1/6/2/10;
+  }
+
+  .compo-links .desklink {
+    display: block;
+  }
+
+  .compo-links .moblink {
+    display: none;
+  }
+
+  .pragraph {
+    grid-area: 2/1/4/10;
+    margin: 10px 0 30px 0;
+  }
+
+  .modalbtn {
+    grid-area: 1/6/2/10;
+    justify-content: end;
+    margin: 8px 0 0 auto;
+  }
+
+  #modal .bottomsection .modalbtn a {
+    margin: 0 0 0 8px;
+  }
+
+  /* PopUp end */
 }
