@@ -51,7 +51,7 @@ const projects = [
     <li>CSS</li>
     <li>JavaScript</li>
     <li>HTML</li>`,
-    cardSource: '<p class="btn"><a href="#" id="popupbtn1">See project</a></p>'
+    cardSource: '<p class="btn"><a href="#" id="popupbtn1">See project</a></p>',
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -60,7 +60,7 @@ const projects = [
     <li>CSS</li>
     <li>JavaScript</li>
     <li>HTML</li>`,
-    cardSource: '<p class="btn"><a href="#" id="popupbtn2">See project</a></p>'
+    cardSource: '<p class="btn"><a href="#" id="popupbtn2">See project</a></p>',
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -69,7 +69,7 @@ const projects = [
     <li>CSS</li>
     <li>JavaScript</li>
     <li>HTML</li>`,
-    cardSource: '<p class="btn"><a href="#" id="popupbtn3">See project</a></p>'
+    cardSource: '<p class="btn"><a href="#" id="popupbtn3">See project</a></p>',
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -78,7 +78,7 @@ const projects = [
     <li>CSS</li>
     <li>JavaScript</li>
     <li>HTML</li>`,
-    cardSource: '<p class="btn"><a href="#" id="popupbtn4">See project</a></p>'
+    cardSource: '<p class="btn"><a href="#" id="popupbtn4">See project</a></p>',
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -87,7 +87,7 @@ const projects = [
     <li>CSS</li>
     <li>JavaScript</li>
     <li>HTML</li>`,
-    cardSource: '<p class="btn"><a href="#" id="popupbtn5">See project</a></p>'
+    cardSource: '<p class="btn"><a href="#" id="popupbtn5">See project</a></p>',
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -96,14 +96,14 @@ const projects = [
     <li>CSS</li>
     <li>JavaScript</li>
     <li>HTML</li>`,
-    cardSource: '<p class="btn"><a href="#" id="popupbtn6">See project</a></p>'
-  }
+    cardSource: '<p class="btn"><a href="#" id="popupbtn6">See project</a></p>',
+  },
 ];
 
 const workSection = document.getElementById('worksection');
 
-for (let i = 0; i < projects.length; i++) {
-  let fetch = workSection.innerHTML;
+for (let i = 0; i < projects.length; i += 1) {
+  const fetch = workSection.innerHTML;
   workSection.innerHTML = `
   <div class="card item1">
     <div class="card-info">
@@ -116,7 +116,7 @@ for (let i = 0; i < projects.length; i++) {
       </div>
     </div>
   </div> ${fetch}`;
-};
+}
 
 const popupOn1 = document.getElementById('popupbtn1');
 const popupOn2 = document.getElementById('popupbtn2');
@@ -157,4 +157,4 @@ document.onclick = function callOpenModal(event) {
       break;
     default:
   }
-}
+};
