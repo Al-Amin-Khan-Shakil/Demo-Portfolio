@@ -116,4 +116,4 @@ for (let i = 0; i < projects.length; i++) {
       </div>
     </div>
   </div> ${fetch}`;
-}
+};

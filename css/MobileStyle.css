@@ -703,7 +703,6 @@ form button {
   overflow-x: hidden;
   z-index: 3;
   display: none;
-
 }
 
 #popup {
@@ -784,7 +783,7 @@ form button {
   display: none;
 }
 
-.compo-links a {
+#modal .bottomsection .components .compo-links a {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
@@ -808,7 +807,7 @@ form button {
   margin: 12px 0 32px 0;
 }
 
-.modalbtn a {
+#popup #modal .bottomsection .modalbtn a {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -1140,80 +1139,80 @@ form button {
     margin-top: -63.28px;
   }
 
-/* PopUp start */
+  /* PopUp start */
 
-#modal {
-  max-width: 920px;
-  margin: 0;
-  border-radius: 16px;
-  position: relative;
-}
+  #modal {
+    max-width: 920px;
+    margin: 0;
+    border-radius: 16px;
+    position: relative;
+  }
 
-.topsection {
-  padding: 16px;
-  width: 100%;
-  position: static;
-}
+  .topsection {
+    padding: 16px;
+    width: 100%;
+    position: static;
+  }
 
-.bgPhoto {
-  background: url("../images/desktop-snapshoot.png") no-repeat;
-  height: 616px;
-  background-size: cover;
-  width: 100%;
-}
+  .bgPhoto {
+    background: url("../images/desktop-snapshoot.png") no-repeat;
+    height: 616px;
+    background-size: cover;
+    width: 100%;
+  }
 
-.offBTN {
-  color: #0008;
-  background: #0003;
-}
+  .offBTN {
+    color: #0008;
+    background: #0003;
+  }
 
-.offBTN:hover {
-  background-color: #0005;
-}
+  .offBTN:hover {
+    background-color: #0005;
+  }
 
-.bottomsection {
-  padding: 0 16px;
-  display: grid;
-  justify-content: space-between;
-  gap: 12px;
-  width: 100%;
-}
+  .bottomsection {
+    padding: 0 16px;
+    display: grid;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+  }
 
-.bottomsection .components {
-  grid-area: 1/1/2/6;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 12px;
-}
+  .bottomsection .components {
+    grid-area: 1/1/2/6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+  }
 
-.compo-links {
-  grid-area: 1/6/2/10;
-}
+  .compo-links {
+    grid-area: 1/6/2/10;
+  }
 
-.compo-links .desklink {
-  display: block;
-}
+  .compo-links .desklink {
+    display: block;
+  }
 
-.compo-links .moblink {
-  display: none;
-}
+  .compo-links .moblink {
+    display: none;
+  }
 
-.pragraph {
-  grid-area: 2/1/4/10;
-  margin: 10px 0 30px 0;
-}
+  .pragraph {
+    grid-area: 2/1/4/10;
+    margin: 10px 0 30px 0;
+  }
 
-.modalbtn {
-  grid-area: 1/6/2/10;
-  justify-content: end;
-  margin: 8px 0 0 auto;
-}
+  .modalbtn {
+    grid-area: 1/6/2/10;
+    justify-content: end;
+    margin: 8px 0 0 auto;
+  }
 
-.modalbtn a {
-  margin: 0 0 0 8px;
-}
+  #modal .bottomsection .modalbtn a {
+    margin: 0 0 0 8px;
+  }
 
-/* PopUp end */
+  /* PopUp end */
 }
