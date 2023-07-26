@@ -46,57 +46,33 @@ mobileQuery.addEventListener('change', handleScreenChange);
 const projects = [
   {
     cardName: 'Multi-Post Stories Gain+Glory',
-    technologies: `
-    <li>Ruby on Rails</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>HTML</li>`,
-    cardSource: '<p class="btn"><a href="#" id="popupbtn1">See project</a></p>',
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    cardSource: '<a href="#" id="popupbtn1">See project</a>',
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
-    technologies: `
-    <li>Ruby on Rails</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>HTML</li>`,
-    cardSource: '<p class="btn"><a href="#" id="popupbtn2">See project</a></p>',
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    cardSource: '<a href="#" id="popupbtn2">See project</a>',
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
-    technologies: `
-    <li>Ruby on Rails</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>HTML</li>`,
-    cardSource: '<p class="btn"><a href="#" id="popupbtn3">See project</a></p>',
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    cardSource: '<a href="#" id="popupbtn3">See project</a>',
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
-    technologies: `
-    <li>Ruby on Rails</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>HTML</li>`,
-    cardSource: '<p class="btn"><a href="#" id="popupbtn4">See project</a></p>',
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    cardSource: '<a href="#" id="popupbtn4">See project</a>',
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
-    technologies: `
-    <li>Ruby on Rails</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>HTML</li>`,
-    cardSource: '<p class="btn"><a href="#" id="popupbtn5">See project</a></p>',
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    cardSource: '<a href="#" id="popupbtn5">See project</a>',
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
-    technologies: `
-    <li>Ruby on Rails</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>HTML</li>`,
-    cardSource: '<p class="btn"><a href="#" id="popupbtn6">See project</a></p>',
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    cardSource: '<a href="#" id="popupbtn6">See project</a>',
   },
 ];
 
@@ -109,10 +85,13 @@ for (let i = 0; i < projects.length; i += 1) {
     <div class="card-info">
       <h3>${projects[i].cardName}</h3>
       <ul>
-        ${projects[i].technologies}
+        <li>${projects[i].technologies[0]}</li>
+        <li>${projects[i].technologies[1]}</li>
+        <li>${projects[i].technologies[2]}</li>
+        <li>${projects[i].technologies[3]}</li>
       </ul>
       <div class="btnbar">
-        ${projects[i].cardSource}
+        <p class="btn">${projects[i].cardSource}</p>
       </div>
     </div>
   </div> ${fetch}`;
