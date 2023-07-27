@@ -47,32 +47,45 @@ const projects = [
   {
     cardName: 'Multi-Post Stories Gain+Glory',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    cardSource: '<a href="#" id="popupbtn1">See project</a>',
+    cardId: 'popupbtn1',
+    popupTitle: 'Keeping track of hundreds of components',
+    popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    cardSource: '<a href="#" id="popupbtn2">See project</a>',
+    cardId: 'popupbtn2',
+    popupTitle: 'Keeping track of hundreds of components',
+    popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    cardSource: '<a href="#" id="popupbtn3">See project</a>',
+    cardId: 'popupbtn3',
+    popupTitle: 'Keeping track of hundreds of components',
+    popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    cardSource: '<a href="#" id="popupbtn4">See project</a>',
+    cardId: 'popupbtn4',
+    popupTitle: 'Keeping track of hundreds of components',
+    popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    cardSource: '<a href="#" id="popupbtn5">See project</a>',
+    cardId: 'popupbtn5',
+    popupTitle: 'Keeping track of hundreds of components',
+    popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    cardSource: '<a href="#" id="popupbtn6">See project</a>',
+    cardId: 'popupbtn6',
+    popupTitle: 'Keeping track of hundreds of components',
+    popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
+    popupDes: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
   },
 ];
 
@@ -91,10 +104,56 @@ for (let i = 0; i < projects.length; i += 1) {
         <li>${projects[i].technologies[3]}</li>
       </ul>
       <div class="btnbar">
-        <p class="btn">${projects[i].cardSource}</p>
+        <p class="btn"><a href="#" id=${projects[i].cardId}>See Project</a></p>
       </div>
     </div>
   </div> ${fetch}`;
+}
+
+const modalContainer = document.getElementById('popup');
+    
+for (let i = 0; i < projects.length; i += 1) {
+  let fetch = modalContainer.innerHTML;
+
+  modalContainer.innerHTML = `
+  <div id="modal">
+      <div class="topsection">
+        <div class="offBTN" id="popup-offbtn">&times;</div>
+        <div class="bgPhoto"></div>
+      </div>
+      <div class="bottomsection">
+        <div class="components">
+          <div class="compo-title">
+              <h3 class="co-title">
+                  ${projects[i].popupTitle}
+              </h3>
+          </div>
+          <div class="compo-links">
+            <div class="moblink">
+              <a href="#">${projects[i].technologies[0]}</a>
+              <a href="#">${projects[i].technologies[1]}</a>
+              <a href="#">${projects[i].technologies[2]}</a>
+            </div>
+            <div class="desklink">
+              <a href="#">${projects[i].popupTech[0]}</a>
+              <a href="#">${projects[i].popupTech[1]}</a>
+              <a href="#">${projects[i].technologies[2]}</a>
+              <a href="#">${projects[i].popupTech[2]}</a>
+              <a href="#">${projects[i].popupTech[3]}</a>
+              <a href="#">${projects[i].popupTech[4]}</a>
+            </div>
+          </div>
+        </div>
+        <div class="pragraph">
+          <p>${projects[i].popupDes}</p>
+          <p>${projects[i].popupDes}</p>
+        </div>
+        <div class="modalbtn">
+          <a href="#">See live <i class="fa fa-external-link"> </i></a>
+          <a href="#">See source <i class="fa fa-github"></i> </a>
+        </div>
+      </div>
+    </div>`
 }
 
 const popupOn1 = document.getElementById('popupbtn1');
@@ -104,7 +163,6 @@ const popupOn4 = document.getElementById('popupbtn4');
 const popupOn5 = document.getElementById('popupbtn5');
 const popupOn6 = document.getElementById('popupbtn6');
 const popupOff = document.getElementById('popup-offbtn');
-const modalOff = document.getElementById('popup');
 const popUp = document.getElementById('popup-wrapper');
 
 function openModal() {
@@ -116,14 +174,14 @@ function closeModal() {
 }
 
 function showWebsite(event) {
-  if (event.target === modalOff) {
+  if (event.target === modalContainer) {
     popUp.style.display = 'none';
   }
 }
 
 document.addEventListener('click', showWebsite);
 popupOff.onclick = closeModal;
-modalOff.onclick = showWebsite;
+modalContainer.onclick = showWebsite;
 document.addEventListener('click', (event) => {
   switch (event.target) {
     case popupOn1:
