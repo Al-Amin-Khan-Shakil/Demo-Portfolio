@@ -50,6 +50,7 @@ const projects = [
     cardId: 'popupbtn1',
     popupTitle: 'Keeping track of hundreds of components',
     popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
+    popupDes: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -57,6 +58,7 @@ const projects = [
     cardId: 'popupbtn2',
     popupTitle: 'Keeping track of hundreds of components',
     popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
+    popupDes: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -64,6 +66,7 @@ const projects = [
     cardId: 'popupbtn3',
     popupTitle: 'Keeping track of hundreds of components',
     popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
+    popupDes: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -71,6 +74,7 @@ const projects = [
     cardId: 'popupbtn4',
     popupTitle: 'Keeping track of hundreds of components',
     popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
+    popupDes: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -78,6 +82,7 @@ const projects = [
     cardId: 'popupbtn5',
     popupTitle: 'Keeping track of hundreds of components',
     popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
+    popupDes: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
