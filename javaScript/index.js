@@ -51,6 +51,7 @@ const projects = [
     popupTitle: 'Keeping track of hundreds of components',
     popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     popupDes: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    popupId: "modal1",
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -59,6 +60,7 @@ const projects = [
     popupTitle: 'Keeping track of hundreds of components',
     popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     popupDes: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    popupId: "modal2",
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -67,6 +69,7 @@ const projects = [
     popupTitle: 'Keeping track of hundreds of components',
     popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     popupDes: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    popupId: "modal3", 
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -75,6 +78,7 @@ const projects = [
     popupTitle: 'Keeping track of hundreds of components',
     popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     popupDes: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    popupId: "modal4",
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -83,6 +87,7 @@ const projects = [
     popupTitle: 'Keeping track of hundreds of components',
     popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     popupDes: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    popupId: "modal5",
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -91,6 +96,7 @@ const projects = [
     popupTitle: 'Keeping track of hundreds of components',
     popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
     popupDes: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    popupId: "modal6",
   },
 ];
 
@@ -121,7 +127,7 @@ for (let i = 0; i < projects.length; i += 1) {
   let fetch = modalContainer.innerHTML;
 
   modalContainer.innerHTML = `
-  <div id="modal">
+  <div id=${projects[i].popupId}>
       <div class="topsection">
         <div class="offBTN" id="popup-offbtn">&times;</div>
         <div class="bgPhoto"></div>

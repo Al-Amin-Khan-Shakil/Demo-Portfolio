@@ -715,7 +715,7 @@ form button {
   z-index: 3;
 }
 
-#modal {
+#modal1 {
   max-width: 343px;
   height: auto;
   background-color: #fff;
@@ -728,6 +728,77 @@ form button {
   position: relative;
   animation: modalanimate 1s;
 }
+
+#modal2 {
+  max-width: 343px;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 36px 0;
+  border-radius: 16px;
+  position: relative;
+  animation: modalanimate 1s;
+}
+
+#modal3 {
+  max-width: 343px;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 36px 0;
+  border-radius: 16px;
+  position: relative;
+  animation: modalanimate 1s;
+}
+
+#modal4 {
+  max-width: 343px;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 36px 0;
+  border-radius: 16px;
+  position: relative;
+  animation: modalanimate 1s;
+}
+
+#modal5 {
+  max-width: 343px;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 36px 0;
+  border-radius: 16px;
+  position: relative;
+  animation: modalanimate 1s;
+}
+
+#modal6 {
+  max-width: 343px;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 36px 0;
+  border-radius: 16px;
+  position: relative;
+  animation: modalanimate 1s;
+}
+
 
 .topsection {
   padding: 16px;
@@ -1141,13 +1212,47 @@ form button {
 
   /* PopUp start */
 
-  #modal {
+  #modal1 {
     max-width: 920px;
     margin: 0;
     border-radius: 16px;
     position: relative;
   }
 
+  #modal2 {
+    max-width: 920px;
+    margin: 0;
+    border-radius: 16px;
+    position: relative;
+  }
+
+  #modal3 {
+    max-width: 920px;
+    margin: 0;
+    border-radius: 16px;
+    position: relative;
+  }
+
+  #modal4 {
+    max-width: 920px;
+    margin: 0;
+    border-radius: 16px;
+    position: relative;
+  }
+
+  #modal5 {
+    max-width: 920px;
+    margin: 0;
+    border-radius: 16px;
+    position: relative;
+  }
+
+  #modal6 {
+    max-width: 920px;
+    margin: 0;
+    border-radius: 16px;
+    position: relative;
+  }
   .topsection {
     padding: 16px;
     width: 100%;
