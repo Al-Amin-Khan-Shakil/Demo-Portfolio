@@ -57,8 +57,10 @@
 - **Contact Form**
 - **Dynamic Mobile Menu**
 - **Dynamic Cards Section**
-- **popup**
+- **Dynamic popup**
 - **Client-side form validation**
+- **Local storage**
+
 
 
 <!-- LIVE DEMO -->

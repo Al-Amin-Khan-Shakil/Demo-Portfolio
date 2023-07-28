@@ -213,6 +213,7 @@ document.addEventListener('click', (event) => {
 
 const mainForm = document.getElementById('formV');
 const emailInput = document.getElementById('emailV');
+const nameInput = document.getElementById('nameV');
 
 const setError = (message) => {
   const errorDisplay = mainForm.querySelector('.error');
@@ -237,10 +238,24 @@ const validateInputs = () => {
   } else {
     setSuccess();
     mainForm.submit();
+    const clientStore = {
+      storeEmail: emailInput.value,
+      storeName: nameInput.value,
+    };
+    localStorage.setItem('clientStore', JSON.stringify(clientStore));
   }
 };
 
 mainForm.addEventListener('submit', (e) => {
   e.preventDefault();
   validateInputs();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const storeData = localStorage.getItem('clientStore');
+  if (storeData) {
+    const formData = JSON.parse(storeData);
+    emailInput.value = formData.storeEmail;
+    nameInput.value = formData.storeName;
+  }
 });
