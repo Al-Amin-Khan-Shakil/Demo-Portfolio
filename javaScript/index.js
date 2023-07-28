@@ -241,7 +241,7 @@ const validateInputs = () => {
     const clientStore = {
       storeEmail: emailInput.value,
       storeName: nameInput.value,
-    }
+    };
     localStorage.setItem('clientStore', JSON.stringify(clientStore));
   }
 };
