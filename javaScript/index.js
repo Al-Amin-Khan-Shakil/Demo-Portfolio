@@ -208,25 +208,20 @@ document.addEventListener('click', (event) => {
 const mainForm = document.getElementById('formV');
 const emailInput = document.getElementById('emailV');
 
-mainForm.addEventListener('submit', e => {
-  e.preventDefault();
-  validateInputs();
-});
-
 const setError = (message) => {
   const errorDisplay = mainForm.querySelector('.error');
 
   errorDisplay.innerHTML = message;
   errorDisplay.style.display = 'block';
   errorDisplay.style.color = '#c6231b';
-}
+};
 
 const setSuccess = () => {
   const errorDisplay = mainForm.querySelector('.error');
 
   errorDisplay.innerHTML = '';
   errorDisplay.style.display = 'none';
-}
+};
 
 const validateInputs = () => {
   const emailValue = emailInput.value.trim();
@@ -238,3 +233,8 @@ const validateInputs = () => {
     mainForm.submit();
   }
 };
+
+mainForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  validateInputs();
+});
