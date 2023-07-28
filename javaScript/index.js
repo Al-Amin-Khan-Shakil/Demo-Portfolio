@@ -207,6 +207,11 @@ document.addEventListener('click', (event) => {
 
 const mainForm = document.getElementById('formV');
 const emailInput = document.getElementById('emailV');
+const nameInput = document.getElementById('nameV');
+const clientStore = {
+  storeEmail: emailInput.value,
+  storeName: nameInput.value,
+};
 
 const setError = (message) => {
   const errorDisplay = mainForm.querySelector('.error');
@@ -231,6 +236,8 @@ const validateInputs = () => {
   } else {
     setSuccess();
     mainForm.submit();
+    clientStore.storeEmail = localStorage.setItem('emailKey', clientStore.storeEmail);
+    clientStore.storeName = localStorage.setItem('nameKey', clientStore.storeName);
   }
 };
 
@@ -238,3 +245,10 @@ mainForm.addEventListener('submit', (e) => {
   e.preventDefault();
   validateInputs();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (localStorage.getItem('emailKey') && localStorage.getItem('nameKey')) {
+    emailInput.value = localStorage.getItem('emailKey');
+    nameInput.value = localStorage.getItem('nameKey');
+  }
+})
