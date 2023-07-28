@@ -251,4 +251,4 @@ document.addEventListener('DOMContentLoaded', () => {
     emailInput.value = localStorage.getItem('emailKey');
     nameInput.value = localStorage.getItem('nameKey');
   }
-})
+});
