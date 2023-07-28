@@ -58,6 +58,7 @@
 - **Dynamic Mobile Menu**
 - **Dynamic Cards Section**
 - **popup**
+- **Client-side form validation**
 
 
 <!-- LIVE DEMO -->
@@ -138,9 +139,6 @@ To run the project, execute the following command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- **Contact Form**
-- **Desktop Design**
-- **Modals**
 - **Animation Effect**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
