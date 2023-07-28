@@ -50,7 +50,8 @@ const projects = [
     cardId: 'popupbtn1',
     popupTitle: 'Keeping track of hundreds of components',
     popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
-    popupDes: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    popupDes: "Description of card 06 pragraph 01 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    popupDesTwo: "Description of card 06 pragraph 02 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -58,7 +59,8 @@ const projects = [
     cardId: 'popupbtn2',
     popupTitle: 'Keeping track of hundreds of components',
     popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
-    popupDes: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    popupDes: "Description of card 05 pragraph 01 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    popupDesTwo: "Description of card 05 pragraph 02 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -66,7 +68,8 @@ const projects = [
     cardId: 'popupbtn3',
     popupTitle: 'Keeping track of hundreds of components',
     popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
-    popupDes: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    popupDes: "Description of card 04 pragraph 01 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    popupDesTwo: "Description of card 04 pragraph 02 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -74,7 +77,8 @@ const projects = [
     cardId: 'popupbtn4',
     popupTitle: 'Keeping track of hundreds of components',
     popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
-    popupDes: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    popupDes: "Description of card 03 pragraph 01 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    popupDesTwo: "Description of card 03 pragraph 02 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -82,7 +86,8 @@ const projects = [
     cardId: 'popupbtn5',
     popupTitle: 'Keeping track of hundreds of components',
     popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
-    popupDes: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    popupDes: "Description of card 02 pragraph 01 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    popupDesTwo: "Description of card 02 pragraph 02 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
   },
   {
     cardName: 'Multi-Post Stories Gain+Glory',
@@ -90,7 +95,8 @@ const projects = [
     cardId: 'popupbtn6',
     popupTitle: 'Keeping track of hundreds of components',
     popupTech: ['Codekit', 'GitHub', 'Bootstrap', 'Terminal', 'Codepen'],
-    popupDes: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    popupDes: "Description of card 01 pragraph 01 printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    popupDesTwo: "Description of card 01 pragraph 02: printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
   },
 ];
 
@@ -173,8 +179,8 @@ document.addEventListener('click', (event) => {
               </div>
             </div>
             <div class="pragraph">
-              <p>${projects[i].popupDes}</p>
-              <p>${projects[i].popupDes}</p>
+              <p>${projects[index].popupDes}</p>
+              <p>${projects[index].popupDesTwo}</p>
             </div>
             <div class="modalbtn">
               <a href="#">See live <i class="fa fa-external-link"> </i></a>

@@ -58,8 +58,9 @@
 - **Dynamic Mobile Menu**
 - **Dynamic Cards Section**
 - **Dynamic popup**
-
+- **Client-side form validation**
 - **Local storage**
+
 
 
 <!-- LIVE DEMO -->
